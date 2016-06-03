@@ -40,12 +40,12 @@ public class GridWithTilesFragment extends Fragment {
 
     private List<GridWithTilesData> createFakeData() {
         List<GridWithTilesData> data = new ArrayList<>();
-        data.add(new GridWithTilesData(R.drawable.a));
-        data.add(new GridWithTilesData(R.drawable.b));
-        data.add(new GridWithTilesData(R.drawable.c));
-        data.add(new GridWithTilesData(R.drawable.d));
-        data.add(new GridWithTilesData(R.drawable.a));
-        data.add(new GridWithTilesData(R.drawable.b));
+        data.add(new GridWithTilesData(R.drawable.a, true));
+        data.add(new GridWithTilesData(R.drawable.b, false));
+        data.add(new GridWithTilesData(R.drawable.c, false));
+        data.add(new GridWithTilesData(R.drawable.d, false));
+        data.add(new GridWithTilesData(R.drawable.a, true));
+        data.add(new GridWithTilesData(R.drawable.b, true));
         return data;
     }
 }

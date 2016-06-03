@@ -38,6 +38,7 @@ public class GridWithTilesAdapter extends RecyclerView.Adapter<GridWithTilesData
                         .generate();
         int color = palette.getDarkVibrantColor(0);
         holder.contentPanel.setBackgroundColor(color);
+        holder.setFavoriteState(data.get(position).favorite);
     }
 
     @Override
