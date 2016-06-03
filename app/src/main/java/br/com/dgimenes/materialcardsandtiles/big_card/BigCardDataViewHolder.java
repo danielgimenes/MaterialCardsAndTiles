@@ -1,9 +1,11 @@
-package br.com.dgimenes.materialcardsandtiles;
+package br.com.dgimenes.materialcardsandtiles.big_card;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import br.com.dgimenes.materialcardsandtiles.R;
 
 public class BigCardDataViewHolder extends RecyclerView.ViewHolder {
 

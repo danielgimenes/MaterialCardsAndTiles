@@ -1,4 +1,4 @@
-package br.com.dgimenes.materialcardsandtiles;
+package br.com.dgimenes.materialcardsandtiles.card_with_header;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,7 +12,9 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
 
-public class BigCardsFragment extends Fragment {
+import br.com.dgimenes.materialcardsandtiles.R;
+
+public class CardWithHeaderFragment extends Fragment {
 
     private RecyclerView recyclerView;
     private LinearLayoutManager layoutManager;
@@ -31,15 +33,15 @@ public class BigCardsFragment extends Fragment {
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
         layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.setAdapter(new BigCardsAdapter(getActivity(), createFakeData()));
+        recyclerView.setAdapter(new CardWithHeaderAdapter(getActivity(), createFakeData()));
     }
 
-    private List<BigCardData> createFakeData() {
-        List<BigCardData> data = new ArrayList<>();
-        data.add(new BigCardData());
-        data.add(new BigCardData());
-        data.add(new BigCardData());
-        data.add(new BigCardData());
+    private List<CardWithHeaderData> createFakeData() {
+        List<CardWithHeaderData> data = new ArrayList<>();
+        data.add(new CardWithHeaderData());
+        data.add(new CardWithHeaderData());
+        data.add(new CardWithHeaderData());
+        data.add(new CardWithHeaderData());
         return data;
     }
 }

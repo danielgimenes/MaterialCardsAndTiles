@@ -1,4 +1,4 @@
-package br.com.dgimenes.materialcardsandtiles;
+package br.com.dgimenes.materialcardsandtiles.big_card;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
+
+import br.com.dgimenes.materialcardsandtiles.R;
 
 public class BigCardsAdapter extends RecyclerView.Adapter<BigCardDataViewHolder> {
 

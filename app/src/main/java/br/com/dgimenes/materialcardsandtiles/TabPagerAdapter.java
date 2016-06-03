@@ -4,6 +4,9 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import br.com.dgimenes.materialcardsandtiles.big_card.BigCardsFragment;
+import br.com.dgimenes.materialcardsandtiles.card_with_header.CardWithHeaderFragment;
+
 public class TabPagerAdapter extends FragmentPagerAdapter {
 
     TabPagerAdapter(FragmentManager fm) {
@@ -16,6 +19,8 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return new BigCardsFragment();
             case 1:
+                return new CardWithHeaderFragment();
+            case 2:
                 return new BigCardsFragment();
         }
         return null;
@@ -27,6 +32,8 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
             case 0:
                 return "Big Cards";
             case 1:
+                return "Cards With Header";
+            case 2:
                 return "Grid Tiles";
         }
         return super.getPageTitle(position);
@@ -34,6 +41,6 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public int getCount() {
-        return 2;
+        return 3;
     }
 }
