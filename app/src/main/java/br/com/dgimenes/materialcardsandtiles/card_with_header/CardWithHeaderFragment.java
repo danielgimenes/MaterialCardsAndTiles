@@ -24,7 +24,7 @@ public class CardWithHeaderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
         ViewGroup rootView = (ViewGroup)
-                inflater.inflate(R.layout.fragment_big_cards, container, false);
+                inflater.inflate(R.layout.fragment_cards_with_header, container, false);
         setupUI(rootView);
         return rootView;
     }

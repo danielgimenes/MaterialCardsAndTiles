@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentPagerAdapter;
 
 import br.com.dgimenes.materialcardsandtiles.big_card.BigCardsFragment;
 import br.com.dgimenes.materialcardsandtiles.card_with_header.CardWithHeaderFragment;
+import br.com.dgimenes.materialcardsandtiles.grid_with_tiles.GridWithTilesFragment;
 
 public class TabPagerAdapter extends FragmentPagerAdapter {
 
@@ -21,7 +22,7 @@ public class TabPagerAdapter extends FragmentPagerAdapter {
             case 1:
                 return new CardWithHeaderFragment();
             case 2:
-                return new BigCardsFragment();
+                return new GridWithTilesFragment();
         }
         return null;
     }
