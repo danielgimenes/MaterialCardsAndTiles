@@ -1,6 +1,8 @@
 package br.com.dgimenes.materialcardsandtiles.grid_with_tiles;
 
 import android.content.Context;
+import android.graphics.drawable.BitmapDrawable;
+import android.support.v7.graphics.Palette;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -31,6 +33,11 @@ public class GridWithTilesAdapter extends RecyclerView.Adapter<GridWithTilesData
     @Override
     public void onBindViewHolder(GridWithTilesDataViewHolder holder, int position) {
         holder.imageView.setImageResource(data.get(position).drawableRes);
+        Palette palette =
+                Palette.from(((BitmapDrawable) holder.imageView.getDrawable()).getBitmap())
+                        .generate();
+        int color = palette.getDarkVibrantColor(0);
+        holder.contentPanel.setBackgroundColor(color);
     }
 
     @Override

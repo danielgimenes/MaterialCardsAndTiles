@@ -13,10 +13,10 @@
         android:scaleType="center" />
 
     <RelativeLayout
+        android:id="@+id/content_panel"
         android:layout_width="match_parent"
         android:layout_height="68dp"
-        android:padding="16dp"
-        android:background="#888">
+        android:padding="16dp">
 
         <TextView
             android:id="@+id/title"
