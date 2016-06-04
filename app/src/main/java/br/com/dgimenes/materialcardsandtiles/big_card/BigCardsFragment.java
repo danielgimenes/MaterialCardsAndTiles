@@ -38,10 +38,10 @@ public class BigCardsFragment extends Fragment {
 
     private List<BigCardData> createFakeData() {
         List<BigCardData> data = new ArrayList<>();
-        data.add(new BigCardData());
-        data.add(new BigCardData());
-        data.add(new BigCardData());
-        data.add(new BigCardData());
+        data.add(new BigCardData(R.drawable.c));
+        data.add(new BigCardData(R.drawable.d));
+        data.add(new BigCardData(R.drawable.a));
+        data.add(new BigCardData(R.drawable.b));
         return data;
     }
 }

@@ -38,10 +38,10 @@ public class CardWithHeaderFragment extends Fragment {
 
     private List<CardWithHeaderData> createFakeData() {
         List<CardWithHeaderData> data = new ArrayList<>();
-        data.add(new CardWithHeaderData());
-        data.add(new CardWithHeaderData());
-        data.add(new CardWithHeaderData());
-        data.add(new CardWithHeaderData());
+        data.add(new CardWithHeaderData(R.drawable.b));
+        data.add(new CardWithHeaderData(R.drawable.d));
+        data.add(new CardWithHeaderData(R.drawable.a));
+        data.add(new CardWithHeaderData(R.drawable.d));
         return data;
     }
 }

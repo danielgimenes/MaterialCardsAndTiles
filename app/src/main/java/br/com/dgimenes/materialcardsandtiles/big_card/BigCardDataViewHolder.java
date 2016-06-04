@@ -11,10 +11,12 @@ public class BigCardDataViewHolder extends RecyclerView.ViewHolder {
 
     public TextView detailTextView;
     public ImageView expandCardImageView;
+    public ImageView bigImageView;
 
     public BigCardDataViewHolder(View cardView) {
         super(cardView);
         detailTextView = (TextView) cardView.findViewById(R.id.detail_text_view);
+        bigImageView = (ImageView) cardView.findViewById(R.id.big_image_view);
         expandCardImageView = (ImageView) cardView.findViewById(R.id.expand_card_image_view);
         expandCardImageView.setOnClickListener(new View.OnClickListener() {
             @Override

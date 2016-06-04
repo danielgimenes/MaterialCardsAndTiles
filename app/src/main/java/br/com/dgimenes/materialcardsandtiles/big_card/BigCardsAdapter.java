@@ -30,6 +30,7 @@ public class BigCardsAdapter extends RecyclerView.Adapter<BigCardDataViewHolder>
 
     @Override
     public void onBindViewHolder(BigCardDataViewHolder holder, int position) {
+        holder.bigImageView.setImageResource(data.get(position).drawableRes);
     }
 
     @Override

@@ -12,11 +12,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <ImageView
+        <br.com.dgimenes.materialcardsandtiles.SixteenNineImageView
+            android:id="@+id/big_image_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:src="@drawable/card_image" />
+            android:scaleType="fitXY"  />
 
         <TextView
             android:layout_width="match_parent"
@@ -71,10 +72,10 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:paddingEnd="8dp"
-                android:paddingTop="8dp"
                 android:paddingBottom="8dp"
+                android:paddingEnd="8dp"
                 android:paddingStart="16dp"
+                android:paddingTop="8dp"
                 android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
 
         </RelativeLayout>
@@ -84,8 +85,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ellipsize="end"
-            android:maxLines="4"
             android:lineSpacingMultiplier="1.2"
+            android:maxLines="4"
             android:paddingBottom="24dp"
             android:paddingEnd="16dp"
             android:paddingStart="16dp"
